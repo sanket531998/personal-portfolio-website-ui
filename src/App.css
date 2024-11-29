@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes riseFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(150px); /* Start below the viewport */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End in its original position */
+  }
+}
+
+.rise-animation {
+  animation: riseFromBottom 1.5s ease-out forwards; /* Duration and easing */
+  opacity: 0; /* Ensure the text is initially hidden */
+}
