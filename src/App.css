@@ -48,7 +48,24 @@
   }
 }
 
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .rise-animation {
   animation: riseFromBottom 1.5s ease-out forwards; /* Duration and easing */
   opacity: 0; /* Ensure the text is initially hidden */
+}
+
+.slide-animation {
+  animation: slideRight 1.5s ease-out forwards;
+  opacity: 0;
 }
